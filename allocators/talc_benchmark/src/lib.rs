@@ -3,8 +3,8 @@
 use std::alloc::Layout;
 use wasm_bindgen::prelude::*;
 
-#[global_allocator]
 #[cfg(all(feature = "talc"))]
+#[global_allocator]
 static TALCK: talc::TalckWasm = unsafe { talc::TalckWasm::new_global() };
 
 #[wasm_bindgen]

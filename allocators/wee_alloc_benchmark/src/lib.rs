@@ -21,7 +21,7 @@ pub fn run_bench() {
     execute_bench();
 }
 
-const ACTIONS: usize = 5000;
+const ACTIONS: usize = 500;
 const ITERATIONS: usize = 100;
 
 pub fn execute_bench() {
