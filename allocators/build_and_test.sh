@@ -5,7 +5,7 @@ for PACAKGE in ${PACKAGES}; do
     echo "${PACAKGE}"
     
     if [ "${PACAKGE}" = "talc" ]; then
-        wasm-pack --log-level error build ${PACAKGE}_benchmark --release --target web
+        wasm-pack --log-level error build ${PACAKGE}_benchmark --release --target web --features talc
     else
         wasm-pack --log-level error build ${PACAKGE}_benchmark --release --target web
     fi

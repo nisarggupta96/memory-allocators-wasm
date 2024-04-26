@@ -1,0 +1,21 @@
+[package]
+name = "rlsf_image"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rlsf = "0.2.1"
+photon-rs = "0.3.2"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+
+[[bench]]
+name = "rlsf_image"
+harness = false

@@ -1,0 +1,20 @@
+[package]
+name = "wee_image"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wee_alloc = { version = "0.4.5", features = ["size_classes"] }
+photon-rs = "0.3.2"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "wee_image"
+harness = false

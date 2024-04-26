@@ -1,0 +1,22 @@
+[package]
+name = "talc_crypto"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "0.2.92"
+buddy-alloc = "0.5.1"
+fastrand = "2.0.2"
+console_error_panic_hook = "0.1.7"
+web-sys = { version = "0.3.67", features = ["Window", "Performance"] }
+chacha20poly1305 = "0.9.1"
+
+[dependencies.talc]
+version = "4.4.1"
+default-features = false
+features = ["lock_api"]
