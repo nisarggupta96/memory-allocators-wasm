@@ -3,9 +3,17 @@
 use std::alloc::Layout;
 use wasm_bindgen::prelude::*;
 
-#[cfg(all(feature = "talc"))]
+use talc::*;
+
+static mut ARENA: [u8; 1000000] = [0; 1000000];
+
 #[global_allocator]
-static TALCK: talc::TalckWasm = unsafe { talc::TalckWasm::new_global() };
+static ALLOCATOR: Talck<spin::Mutex<()>, ClaimOnOom> = Talc::new(unsafe {
+    // if we're in a hosted environment, the Rust runtime may allocate before
+    // main() is called, so we need to initialize the arena automatically
+    ClaimOnOom::new(Span::from_const_array(core::ptr::addr_of!(ARENA)))
+})
+.lock();
 
 #[wasm_bindgen]
 extern "C" {

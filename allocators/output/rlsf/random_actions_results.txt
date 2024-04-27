@@ -1,0 +1,4 @@
+Hello, world!, rlsf
+  total time: 2682 ms
+  average time for 100000 actions: 26.82 ms
+  average actions/us: 3.7

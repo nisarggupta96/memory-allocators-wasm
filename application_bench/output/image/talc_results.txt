@@ -1,0 +1,22 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+invert_image            time:   [786.07 ms 794.83 ms 807.79 ms]
+                        change: [-1.1268% +0.8439% +2.8383%] (p = 0.46 > 0.05)
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+resize_jpg              time:   [1.1603 s 1.1738 s 1.1885 s]
+                        change: [+0.2408% +1.6063% +2.9084%] (p = 0.05 < 0.05)
+                        Change within noise threshold.
+
+apply_filter            time:   [799.41 ms 810.16 ms 824.38 ms]
+                        change: [+1.2242% +2.5596% +4.3313%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+

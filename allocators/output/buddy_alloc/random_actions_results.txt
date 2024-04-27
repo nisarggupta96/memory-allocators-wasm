@@ -1,0 +1,4 @@
+Hello, world! buddy_alloc
+  total time: 2496 ms
+  average time for 100000 actions: 24.96 ms
+  average actions/us: 4.0

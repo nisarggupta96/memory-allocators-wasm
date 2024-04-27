@@ -19,4 +19,4 @@ warp = "0.3.3"
 # version = "4.4.1"
 # default-features = false
 # features = ["lock_api"]
-wee_alloc = { version = "0.4.5", features = ["size_classes"] }
+# wee_alloc = { version = "0.4.5", features = ["size_classes"] }

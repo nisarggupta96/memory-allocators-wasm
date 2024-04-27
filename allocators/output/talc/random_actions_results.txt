@@ -1,0 +1,3 @@
+  total time: 1834 ms
+  average time for 100000 actions: 18.34 ms
+  average actions/us: 5.5

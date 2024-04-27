@@ -1,0 +1,4 @@
+Hello, world!, wee_alloc
+  total time: 152 ms
+  average time for 500 actions: 1.52 ms
+  average actions/us: 0.3

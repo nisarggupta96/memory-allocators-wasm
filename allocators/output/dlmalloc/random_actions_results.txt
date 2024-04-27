@@ -1,0 +1,4 @@
+Hello, world!, dlmalloc
+  total time: 2296 ms
+  average time for 100000 actions: 22.96 ms
+  average actions/us: 4.4

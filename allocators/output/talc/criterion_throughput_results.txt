@@ -1,0 +1,36 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+alloc/16 Bytes          time:   [7.5052 ms 7.5174 ms 7.5412 ms]
+                        thrpt:  [278.09 Melem/s 278.97 Melem/s 279.43 Melem/s]
+                 change:
+                        time:   [-0.1093% +0.2475% +0.7212%] (p = 0.33 > 0.05)
+                        thrpt:  [-0.7161% -0.2469% +0.1094%]
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high severe
+alloc/32 Bytes          time:   [3.2199 ms 3.2924 ms 3.3963 ms]
+                        thrpt:  [308.74 Melem/s 318.49 Melem/s 325.66 Melem/s]
+                 change:
+                        time:   [-2.4438% +0.5127% +3.2432%] (p = 0.77 > 0.05)
+                        thrpt:  [-3.1413% -0.5101% +2.5050%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+alloc/64 Bytes          time:   [3.4814 ms 3.6604 ms 3.9237 ms]
+                        thrpt:  [133.62 Melem/s 143.23 Melem/s 150.60 Melem/s]
+                 change:
+                        time:   [-9.0745% -3.6139% +1.3726%] (p = 0.22 > 0.05)
+                        thrpt:  [-1.3540% +3.7494% +9.9802%]
+                        No change in performance detected.
+alloc/128 Bytes         time:   [1.7404 ms 1.8231 ms 1.9900 ms]
+                        thrpt:  [131.73 Melem/s 143.79 Melem/s 150.62 Melem/s]
+                 change:
+                        time:   [-8.5431% -3.3583% +4.6577%] (p = 0.37 > 0.05)
+                        thrpt:  [-4.4504% +3.4750% +9.3412%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+

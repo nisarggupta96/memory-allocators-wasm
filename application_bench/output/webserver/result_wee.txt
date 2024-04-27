@@ -1,0 +1,35 @@
+Server Software:
+Server Hostname:        127.0.0.1
+Server Port:            8000
+
+Document Path:          /api/todos
+Document Length:        9354 bytes
+
+Concurrency Level:      1
+Time taken for tests:   1.416 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      94640000 bytes
+HTML transferred:       93540000 bytes
+Requests per second:    7060.93 [#/sec] (mean)
+Time per request:       0.142 [ms] (mean)
+Time per request:       0.142 [ms] (mean, across all concurrent requests)
+Transfer rate:          65258.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    0   0.1      0       3
+Waiting:        0    0   0.1      0       3
+Total:          0    0   0.1      0       3
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%      3 (longest request)

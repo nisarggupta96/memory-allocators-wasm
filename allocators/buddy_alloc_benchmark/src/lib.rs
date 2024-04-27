@@ -4,8 +4,8 @@ use wasm_bindgen::prelude::*;
 
 use buddy_alloc::{BuddyAllocParam, FastAllocParam, NonThreadsafeAlloc};
 
-const FAST_HEAP_SIZE: usize = 32 * 1024; // 32 KB
-const HEAP_SIZE: usize = 1024 * 1024; // 1M
+const FAST_HEAP_SIZE: usize = 1024 * 1024; // 1M
+const HEAP_SIZE: usize = 16 * 1024 * 1024; // 16M
 const LEAF_SIZE: usize = 16;
 
 pub static mut FAST_HEAP: [u8; FAST_HEAP_SIZE] = [0u8; FAST_HEAP_SIZE];

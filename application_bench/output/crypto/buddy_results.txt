@@ -1,0 +1,8 @@
+Method: chacha20poly1305
+Iteration: 1000000
+  total time: 1306 ms
+  average time for: 0.001306 ms
+Method: Xchacha20poly1305
+Iteration: 1000000
+  total time: 1590 ms
+  average time for: 0.00159 ms
